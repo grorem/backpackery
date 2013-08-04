@@ -1,0 +1,223 @@
+html{
+    
+    background:url('../img/blackorchid.png');
+    
+}
+
+
+body {
+    border-top:solid;
+border-color:#08C;
+border-width:8px;
+    background:white;
+    color:black;
+    
+    font-family: "afta", Arial, sans-serif;
+    
+}
+
+@font-face {
+  font-family: "antiqua";
+  src: url("Chantelli_Antiqua-webfont.eot");
+  src: local("?"),
+    url("Chantelli_Antiqua-webfont.woff") format("woff"),
+    url("Chantelli_Antiqua-webfont.ttf") format("truetype"),
+    url("Chantelli_Antiqua-webfont.svg") format("svg");
+  }
+
+@font-face {
+  font-family: "antiqua";
+  src: url("Chantelli_Antiqua-webfont.eot");
+  src: local("?"),
+    url("Chantelli_Antiqua-webfont.woff") format("woff"),
+    url("Chantelli_Antiqua-webfont.ttf") format("truetype"),
+    url("Chantelli_Antiqua-webfont.svg") format("svg");
+  }
+
+
+@font-face {
+  font-family: "afta";
+  src: url("AftaSansThin-Regular-webfont.eot");
+  src: local("?"),
+    url("AftaSansThin-Regular-webfont.woff") format("woff"),
+    url("AftaSansThin-Regular-webfont.ttf") format("truetype"),
+    url("AftaSansThin-Regular-webfont.svg") format("svg");
+  }
+
+h1, h2, h3{
+    font-family: "antiqua", Arial, sans-serif;
+    color:white;
+    font-weight:normal;
+}
+
+h1 a{
+    font-family: "antiqua", Arial, sans-serif;
+    color:white;
+    font-size:55px;
+    -moz-transition-property : color;
+-moz-transition-duration:0.5s;
+-webkit-transition-property : color;
+-webkit-transition-duration : 0.5s;
+-o-transition-property : color;
+-o-transition-duration : 0.5s;
+transition-property : color;
+transition-duration : 0.5s;
+ margin-bottom:-50px;   
+}
+
+h1 a:hover{
+    color:#08C;
+    
+    -moz-transition-property : color;
+-moz-transition-duration:0.5s;
+-webkit-transition-property : color;
+-webkit-transition-duration : 0.5s;
+-o-transition-property : color;
+-o-transition-duration : 0.5s;
+transition-property : color;
+transition-duration : 0.5s;
+}
+
+h4{
+    font-family: "antiqua", Arial, sans-serif;
+    color:#08C;
+    font-weight:normal;
+}
+
+h7{
+    
+    font-size:20px;
+   
+}
+
+img.alignleft {float:left;}
+
+img.alignright {float:right;}
+
+
+#header {
+    margin-top:10px;
+    
+    }
+    
+#header li{
+    padding:0px 20px 0px 90px;
+    float:left;
+    list-style: none;
+    
+}
+
+#header a{
+    
+    color:white;
+       -moz-transition-property : color;
+-moz-transition-duration:0.5s;
+-webkit-transition-property : color;
+-webkit-transition-duration : 0.5s;
+-o-transition-property : color;
+-o-transition-duration : 0.5s;
+transition-property : color;
+transition-duration : 0.5s;
+}
+
+#header a:hover{
+    
+    
+     color:#08C
+        
+}
+
+
+
+#content img{
+    max-width:320px;
+    padding:10px;
+    
+}
+
+
+#sidebar{
+  
+    border-right:groove 1px;
+    
+}
+
+
+#sidebar a:hover{
+   color:white; 
+    border-right:groove 1px;
+    
+}
+
+
+.downnav{
+    border-top:solid 1px;
+     position:fixed;
+    left:0px;
+    bottom:0px;
+    height:80px;
+    width:100%;
+    background:black;
+    
+}
+
+
+
+
+
+.downnav li{
+    
+   padding:0px 0px 0px 0px;
+   float:left;
+   list-style:none;
+}
+
+.upnav{
+    background:black;
+    display:block;
+    margin-left: auto;
+  margin-right: auto;
+    
+}
+
+.upnav img{
+    max-height:80px;
+    
+}
+
+@media screen and (max-width: 775px) {
+    .upnav {
+        display: none !important;
+    }
+    
+    .uppiestnav{
+        display: none !important;
+    }
+    
+    #btmpics img{
+       width:155px;
+    }
+    
+    #content{
+       border-right:none;
+    }
+    
+    #content img{
+       padding-left:0px;
+    }
+    
+}
+
+@media screen and (min-width: 775px) {
+    .downnav {
+        display: none !important;
+    }
+}
+
+#btmpics img{
+    
+   max-width:200px;
+    
+}
+
+
