@@ -2109,7 +2109,7 @@ p {
   font-family: inherit;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.95;
   margin-bottom: 1.25em;
   text-rendering: optimizeLegibility;
 }
@@ -2171,7 +2171,7 @@ h6 {
 
 /* line 204, ../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/zurb-foundation-4.1.6/scss/foundation/components/_type.scss */
 hr {
-  border: solid #dddddd;
+  border: solid #222222;
   border-width: 1px 0 0;
   clear: both;
   margin: 1.25em 0 1.1875em;

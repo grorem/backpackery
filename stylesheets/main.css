@@ -1,6 +1,6 @@
 html{
     
-    background:url('../img/blackorchid.png');
+    background:url('../img/paper-bg.png');
     
 }
 
@@ -16,12 +16,24 @@ h9 {
     
 }
 
+#fade {background:url('../img/paper-bg.png');}
+
+
+
+#everything {
+    
+    background:url('../img/lviv_map2.png');
+    
+    
+}
+
 body {
     border-top:solid;
 border-color:#08C;
 border-width:8px;
-    background:url('../img/blackorchid.png');
-    color:white;
+    background:url('../img/paper-bg.png');
+    
+    color:black;
     
     font-family: "roboto", Arial, sans-serif;
     
@@ -311,4 +323,16 @@ border-radius: 4px; /* CSS3 */
      -moz-border-radius: 4px; /* Firefox */
 -webkit-border-radius: 4px; /* Safari, Chrome */
 border-radius: 4px; /* CSS3 */
+}
+
+#trips img{
+    max-height:150px;
+   
+    
+}
+
+trip {
+    color:white;
+    font-size:28px;
+    
 }
