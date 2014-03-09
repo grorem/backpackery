@@ -188,7 +188,7 @@ $(window).scroll(function(e){
 $(function() {
     $('.menuToggle').unbind('click').click(function(){
 
-        $('.msubnav').slideToggle(500);
+        $('.msubnav').fadeToggle(500);
    
     });
 
@@ -199,7 +199,7 @@ $(function() {
 $(function() {
     $('.msubnav').children().click(function(){
 
-        $('.msubnav').slideUp(500);
+        $('.msubnav').fadeOut(500);
    
     });
 });
