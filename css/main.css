@@ -13,13 +13,16 @@ body{
 
 	
 	color: #646464;
-	background: url('../img/dust.png');
+	background: url('../img/lviv_map.png');
 	line-height:32px;
 	font-size:17px;
 
 
 }
 
+
+
+	
 
 p{
 
@@ -160,8 +163,15 @@ opacity: .9;
 
 
 .subnav{
-		
+		min-width: 188px;
 		margin-right:40px;
+
+}
+
+
+.subnav img{
+		
+		max-width: 40px;
 
 }
 
@@ -346,9 +356,10 @@ opacity: .9;
 
 
 .sm img{
-
-	margin:0.8%;
-	max-width: 45%;
+	margin-top:2%;
+	margin-bottom:2%;
+	margin-right:2%;
+	max-width: 47.5%;
 	
 }
 

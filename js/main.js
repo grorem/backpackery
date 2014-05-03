@@ -3,11 +3,7 @@ $(function() {
     	
         $('.seeit1').slideDown(200);
         
-    });
-
-
-    
-
+    });   
 });
 
 
@@ -17,10 +13,6 @@ $(function() {
         $('.seeit1').slideUp(200);
         
     });
-
-
-    
-
 });
 
 
@@ -31,10 +23,6 @@ $(function() {
         $('.seeit2').slideDown(200);
         
     });
-
-
-    
-
 });
 
 
@@ -44,10 +32,6 @@ $(function() {
         $('.seeit2').slideUp(200);
         
     });
-
-
-    
-
 });
 
 
@@ -70,20 +54,16 @@ $(function() {
 
 
 $(function() {
-    $('.subnav').children().click(function(event){
+    $('.subnav').children().click(function (event){
 
         $('.subnav').children().removeClass('selected');
         $(this).addClass('selected');
-
-        
-        
-        
+         
     });
-
-
-    
-
 });
+
+
+
 
 
 
@@ -114,10 +94,6 @@ $(function() {
         
         
     });
-
-
-    
-
 });
 
 
@@ -133,10 +109,6 @@ $(function() {
         
         
     });
-
-
-    
-
 });
 
 
@@ -171,10 +143,21 @@ $(window).scroll(function(){
        lastId = id;
        // Set/remove active class
        menuItems
+
+
          .parent().removeClass("selected")
          .end().filter("[href=#"+id+"]").parent().addClass("selected");
-   }                   
+       
+   }   
+
+$('#woody').remove();
+
 });
+
+
+
+
+
 
 
 $(window).scroll(function(e){ 
@@ -191,8 +174,6 @@ $(function() {
         $('.msubnav').fadeToggle(500);
    
     });
-
-
 });
 
 
