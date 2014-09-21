@@ -1,37 +1,53 @@
 $(function() {
     $('.gallery1').mouseenter(function(event){
-    	
+
         $('.seeit1').slideDown(200);
-        
-    });   
+
+    });
+
+
+
+
 });
 
 
 $(function() {
     $('.gallery1').mouseleave(function(event){
-        
+
         $('.seeit1').slideUp(200);
-        
+
     });
+
+
+
+
 });
 
 
 
 $(function() {
     $('.gallery2').mouseenter(function(event){
-        
+
         $('.seeit2').slideDown(200);
-        
+
     });
+
+
+
+
 });
 
 
 $(function() {
     $('.gallery2').mouseleave(function(event){
-        
+
         $('.seeit2').slideUp(200);
-        
+
     });
+
+
+
+
 });
 
 
@@ -43,9 +59,9 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top - 50
+          scrollTop: target.offset().top - 100
         }, 500);
-        
+        return false;
       }
     }
   });
@@ -53,135 +69,108 @@ $(function() {
 
 
 
-$(function() {
-    $('.subnav').children().click(function (event){
 
-        $('.subnav').children().removeClass('selected');
-        $(this).addClass('selected');
-         
+
+
+
+$(function(){
+    $(".extoggle").click(function(){
+
+
+        $(this).fadeOut(10);
+        $('.extoggled').delay(10).fadeIn();
+
+        $('.hider').fadeOut(60);
+        $('.shower').delay(60).fadeIn();
+
+
+
+    });
+});
+
+
+$(function(){
+    $(".extoggled").click(function(){
+
+
+        $(this).fadeOut(10);
+        $('.extoggle').delay(10).fadeIn();
+
+        $(this)
+        $('.shower').fadeOut(60);
+        $('.hider').delay(60).fadeIn();
+
+
+
+
+    });
+});
+
+
+$(window).scroll(function(e){
+  $el = $('.nav');
+  if ($(this).scrollTop() > 600 && $el.css('position') != 'fixed'){
+    $('.nav').css({'position': 'fixed', 'top': '0px'});
+  }
+});
+
+
+$(window).scroll(function(e){
+  $el = $('.nav');
+  if ($(this).scrollTop() < 600 && $el.css('position') != 'static'){
+    $('.nav').css({'position': 'static'});
+
+
+
+  }
+});
+
+
+
+
+
+
+$(function(){
+    $(".menu").click(function(){
+
+
+        $('.mobileNavigation').fadeIn();
+
+
     });
 });
 
 
 
+$(function(){
+    $(".topper").click(function(){
 
 
+        $('.mobileNavigation').fadeOut();
 
 
-
-
-
-var elementPosition = $('.subnav').offset();
-
-$(window).scroll(function(){
-        if($(window).scrollTop() > elementPosition.top){
-              $('.subnav').css('position','fixed').css('top','0');
-        } else {
-            $('.subnav').css('position','static');
-        }    
-});
-
-
-
-$(function() {
-    $('.justphotos').click(function(){
-
-        $('p').slideUp(500);
-        $('.justphotos').hide(0);
-        $('.showtext').show(0);
-
-        
-        
-        
     });
 });
 
 
-$(function() {
-    $('.showtext').click(function(){
-
-        $('p').slideDown(500);
-        $('.justphotos').show(0);
-        $('.showtext').hide(0);
-        
-
-        
-        
-        
-    });
-});
+$(function(){
+    $(".mobileNavigation a").click(function(){
 
 
+        $('.mobileNavigation').fadeOut();
 
-var lastId,
-    topMenu = $(".subnav"),
-    topMenuHeight = topMenu.outerHeight()+15,
-    // All list items
-    menuItems = topMenu.find("a"),
-    // Anchors corresponding to menu items
-    scrollItems = menuItems.map(function(){
-      var item = $($(this).attr("href"));
-      if (item.length) { return item; }
+
     });
 
 
-// Bind to scroll
-$(window).scroll(function(){
-   // Get container scroll position
-   var fromTop = $(this).scrollTop()+topMenuHeight;
-   
-   // Get id of current scroll item
-   var cur = scrollItems.map(function(){
-     if ($(this).offset().top < fromTop)
-       return this;
-   });
-   // Get the id of the current element
-   cur = cur[cur.length-1];
-   var id = cur && cur.length ? cur[0].id : "";
-   
-   if (lastId !== id) {
-       lastId = id;
-       // Set/remove active class
-       menuItems
+
+    $('#gallery2').rebox({ selector: 'a' });
+    $('#galleryGranada').rebox({ selector: 'a' });
+    $('#gallerySJ').rebox({ selector: 'a' });
+    $('#galleryMatagalpa').rebox({ selector: 'a' });
 
 
-         .parent().removeClass("selected")
-         .end().filter("[href=#"+id+"]").parent().addClass("selected");
-       
-   }   
 
-$('#woody').remove();
+
 
 });
-
-
-
-
-
-
-
-$(window).scroll(function(e){ 
-  $el = $('.mhead'); 
-  if ($(this).scrollTop() > 200 && $el.css('position') != 'fixed'){ 
-    $('.mhead').css({'position': 'fixed', 'top': '0px'}); 
-  } 
-});
-
-
-$(function() {
-    $('.menuToggle').unbind('click').click(function(){
-
-        $('.msubnav').fadeToggle(500);
-   
-    });
-});
-
-
-$(function() {
-    $('.msubnav').children().click(function(){
-
-        $('.msubnav').fadeOut(500);
-   
-    });
-});
-
