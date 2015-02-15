@@ -20,10 +20,32 @@
 body{
 
 	font-family: light;
-	color: #A6A6A6;
-	background: url('../img/subtle_grunge.png');
+	color: #ffffff;
+
 	line-height:28px;
 	font-size:14px;
+
+
+
+}
+
+
+.blur{
+  width:100%;
+
+  background: url('../img/muted.jpg');
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    position:fixed;
+    height:100vh;
+    z-index:-10;
+}
+
+.blurred{
+
+
+  -webkit-filter: blur(4px);
 }
 
 
@@ -49,7 +71,7 @@ sup{
 
 h1{
 	font-family: thin;
-	color:	white;
+	color:	#ffffff;
 	font-size: 77px;
   margin-top:-20px;
   margin-bottom:15px;
@@ -60,8 +82,8 @@ h1{
 
 h2{
 	font-family: thin;
-	color: #68AEA0;
-	font-size: 38px
+	color: #ffffff;
+	font-size: 55px
 
 }
 
@@ -77,11 +99,6 @@ h3{
 
 h4{
 
-	margin-top: 15px;
-  margin-left: 25px;
-	font-family: thin;
-  font-size:28px;
-	color: #333333;
 
 }
 
@@ -89,8 +106,8 @@ h5{
 
 	margin-top: -5px;
   margin-bottom: -5px;
-	font-family: thin;
-	color: #A6A6A6;
+	font-family: light;
+	color: #ffffff;
 	font-size: 24px;
 
 }
@@ -99,8 +116,8 @@ h6{
 
 	margin-top: 15px;
 	font-family: light;
-	color: #A6A6A6;
-	font-size: 15px;
+	color: #ffffff;
+	font-size: 16px;
 
 }
 
@@ -115,65 +132,51 @@ h6{
 .header{
   width:100%;
   height:100vh;
-  padding:100px 100px 100px;
-  color:white;
+  padding:50px 50px 50px;
+  color:#68AEA0;
+  margin-bottom:100px;
+
 
 
   text-align: center;
 
-  text-align: center;
-
-  background: url('../img/ridge-2.jpg');
-  background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    position:relative;
+  z-index:100;
 }
 
+.cirqueExp{
+
+  background:black;
 
 
-.niheader{
-  width:100%;
-  height:100vh;
-  padding:100px 100px 100px;
-  color:white;
-  z-index:-2;
-
-  text-align: center;
-
-  text-align: center;
-
-  background: url('../img/masaya.jpg');
-  background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    position:relative;
 }
 
+.header h1{
 
+  color: #fffff;
 
-.wyheader{
+}
+
+.toppers{
+
   width:100%;
-  height:100vh;
-  padding:100px 100px 100px;
-  color:white;
-  z-index:-2;
 
-  text-align: center;
+}
 
-  text-align: center;
+.toppers li{
 
-  background: url('../img/wy/towers.jpg');
-  background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    position:relative;
+  float:left;
+  margin:auto;
+  list-style:none;
+
+
 }
 
 
 .header img{
 
-    max-width:75%;
+    max-width:85%;
+    margin-top:-35px;
+
 
 }
 
@@ -390,7 +393,6 @@ list-style:none;
 
 
 
-
 .main{
 
 
@@ -467,7 +469,7 @@ text-decoration: none;
 
 
 .thingers{
-
+  background: url('../img/black_lozenge.png');
   margin-top:25px;
 
 }
@@ -489,12 +491,34 @@ text-decoration: none;
 
 .thingers h5{
 
-color:#68AEA0;
 
+margin-bottom:5px;
+color:#ffffff;
+font-family: thin;
 
 
 }
 
+.ico{
+
+  float:right;
+  z-index:10;
+  }
+
+
+.ico img{
+
+  max-width:35px;
+
+
+}
+
+.thingers h6{
+
+  color:#ffffff;
+
+
+}
 
 .thingers a{
 
@@ -568,44 +592,376 @@ text-decoration: none;
 
 .thinger{
 
-  background:#333333;
+  color:#ffffff;
+  height:225px;
+  width:100%;
 
+
+  margin-top:45px;
   margin-bottom: 25px;
   -moz-border-radius: 6px;
-   -webkit-border-radius: 6px;
-   -khtml-border-radius: 6px;
-   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
 
 
 }
 
 
-.thinger :hover{
 
-opacity:.8;
+.cirque{
+
+
+  background: url("../img/wy/cirqueCover-04.png");
+  background-size:cover;
+
+}
+
+
+
+.elbert{
+
+
+  background: url("../img/co/elbert-08.png");
+  background-size:cover;
+
+}
+
+
+.kings{
+
+
+  background: url("../img/ut/kings-08.png");
+  background-size:cover;
+
+}
+
+
+.zion{
+
+
+  background: url("../img/ut/zionChain-10.png");
+  background-size:cover;
+
+}
+
+
+.trip{
+
+  color:#ffffff;
+  height:400px;
+  width:94%;
+  margin:auto;
+  padding:25px;
+  padding-left:40px;
+  margin-top:45px;
+  margin-bottom: 75px;
+  margin-right:25px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+
+
+  font-size:16px;
+
+
+}
+
+.trip:hover{
+  cursor:pointer;
+  opacity:.7;
+
+}
+
+
+.tripOver{
+
+  color:#ffffff;
+  height:400px;
+  width:90%;
+  margin:auto;
+  padding:25px;
+  padding-left:40px;
+  background:#060F15;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+
+
+  font-size:16px;
+  position:absolute;
+  left:40px;
+  opacity:.7;
+
+}
+
+
+
+
+
+
+.trip h4{
+
+
+  color:#ffffff;
+
+  margin-bottom:15px;
+  font-size:24px;
+  font-family:light;
+
+}
+
+
+.trip h5{
+
+
+  color:#ffffff;
+  margin-top:15px;
+  margin-bottom:5px;
+  font-size:18px;
+  font-family:light;
+
+}
+
+
+.trip h6{
+
+
+  color:#ffffff;
+  margin-left:5px;
+  margin-top:25px;
+  font-size:16px;
+
+}
+
+.trip img{
+
+  max-width:75px;
+  margin-bottom:10px;
+
+}
+
+.infolett{
+  margin-right:25px;
+  float:left;
+
+}
+
+
+
+.topper img{
+
+  max-width:100%;
+  margin-bottom:-48px;
+
+}
+
+
+.bloggles{
+  display:none;
+
+  color:#333333;
+  height:100%;
+  width:94%;
+  margin:auto;
+  padding-top:25px;
+  padding-bottom:25px;
+
+  margin-top:-75px;
+  margin-bottom: 75px;
+  margin-right:25px;
+  -moz-border-radius: 0 0 8px 8px;
+  -webkit-border-radius: 0 0 8px 8px;
+  -khtml-border-radius: 0 0 8px 8px;
+  border-radius: 0 0 8px 8px;
+  background-color:rgba(256, 256, 256, 0.75)
 
 
 }
 
 
-.thinger img{
+.bloggles h2{
+  color:#333333;
+  font-size:30px;
+  font-family: light;
+  margin-left:50px;
 
+}
 
+.bloggles h6{
+  color:#333333;
+  font-size:22px;
+  font-family: light;
+  margin-left:50px;
+  margin-bottom:-25px;
+  margin-top:40px;
 
+}
 
-  -moz-border-radius: 6px 6px 0px 0px;
-   -webkit-border-radius: 6px 6px 0px 0px;
-   -khtml-border-radius: 6px 6px 0px 0px;
-   border-radius: 6px 6px 0px 0px;
+.bloggles img{
+
+  max-width:100%;
 
 
 }
+
+
+.bloggles p{
+  font-size:16px;
+  padding:25px;
+  max-width:80%;
+  margin-left:25px;
+  margin-bottom:-15px;
+
+
+
+}
+
+.closeBtn{
+  color:#333333;
+  font-size:24px;
+  text-align:center;
+  padding:5px;
+
+  border:solid 1px;
+  border-color:#333333;
+  margin:auto;
+  width:125px;
+  height:45px;
+
+  margin-top:55px;
+
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.closeBtn:hover{
+
+  background:#333333;
+  color:#ffffff;
+  cursor:pointer;
+
+}
+
+
+.introArea img{
+
+  margin-bottom:55px;
+  max-width:22%;
+  float:right;
+  margin-right:55px;
+  margin-left:25px;
+
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+
+}
+
+
+.splitImg img{
+
+max-width:50%;
+
+}
+
+
+.clear{
+
+  clear:both;
+
+}
+
+.pin{float:left;}
+
+.infoborderlower {
+
+  border-style:dashed;
+  border-width:1px;
+  border-color:white;
+  width:225px;
+  margin-bottom:15px;
+
+}
+
+
+
+.teaserImgs img{
+
+  max-width:100%;
+
+
+}
+
+
+.teaserInfo{
+
+  margin-bottom:50px;
+  margin-top:20px;
+
+}
+
+.teaserInfo img{
+
+  float: left;
+  margin-left:12px;
+  margin-right:12px;
+
+}
+
+.sm img{
+
+  margin-bottom:20px;
+
+}
+
+
+.cdt{
+
+  background:url("../img/wy/small/fluers.jpg");
+  background-size:cover;
+}
+
+
+
+
+
+.npsamy{
+
+  background:url("../img/ut/zionChain-2.jpg");
+  background-size:cover;
+
+}
+
+
+.thinger h5{
+
+  color:#ffffff;
+
+}
+
+
+
+
+
+
 
 
 .thingerInner{
 
-    padding:10px;
-    padding-top: 2px;
+
+    width:90%;
+    z-index:55;
+    position:absolute;
+    bottom:-40px;
+    left:25px;
+
+
 
 }
 
@@ -623,5 +979,11 @@ opacity:.8;
 
     position: fixed;
      top: 0;
+
+}
+
+.teasers img{
+
+min-height:166px;
 
 }
