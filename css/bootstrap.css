@@ -848,7 +848,7 @@ pre code {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px;
+  
 }
 
 .col-xs-1,
@@ -4519,14 +4519,14 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
   border-bottom:solid 2px;
 
-  
+
 }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #ffffff;
-  
+
 }
 
 .navbar-inverse .navbar-nav > .disabled > a,
@@ -4551,7 +4551,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  
+
   border-color: #101010;
 }
 
